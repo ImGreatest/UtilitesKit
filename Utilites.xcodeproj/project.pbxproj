@@ -75,6 +75,8 @@
 		A77AE3782AF014B700F42C32 = {
 			isa = PBXGroup;
 			children = (
+				A77AE3B82AF019B100F42C32 /* Tools */,
+				A77AE3B72AF019A400F42C32 /* Documentation */,
 				A77AE3832AF014B700F42C32 /* Utilites */,
 				A77AE3952AF014B800F42C32 /* UtilitesTests */,
 				A77AE39F2AF014B800F42C32 /* UtilitesUITests */,
@@ -127,6 +129,20 @@
 				A77AE3A22AF014B800F42C32 /* UtilitesUITestsLaunchTests.swift */,
 			);
 			path = UtilitesUITests;
+			sourceTree = "<group>";
+		};
+		A77AE3B72AF019A400F42C32 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		A77AE3B82AF019B100F42C32 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
