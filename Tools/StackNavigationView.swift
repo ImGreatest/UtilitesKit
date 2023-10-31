@@ -1,8 +1,16 @@
-//
-//  StackNavigationView.swift
-//  Utilites
-//
-//  Created by Rayn Sosling on 30.10.2023.
-//
 
-import Foundation
+import SwiftUI
+
+struct StackNavigationView<Content: View>: View {
+    let content: Content
+    
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+    
+    var body: some View {
+        ZStack {
+            content
+        }
+    }
+}

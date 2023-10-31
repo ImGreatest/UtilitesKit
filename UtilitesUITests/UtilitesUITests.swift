@@ -1,13 +1,8 @@
-//
-//  UtilitesUITests.swift
-//  UtilitesUITests
-//
-//  Created by Rayn Sosling on 30.10.2023.
-//
+
 
 import XCTest
 
-final class UtilitesUITests: XCTestCase {
+final class TestViewUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -39,3 +34,4 @@ final class UtilitesUITests: XCTestCase {
         }
     }
 }
+
