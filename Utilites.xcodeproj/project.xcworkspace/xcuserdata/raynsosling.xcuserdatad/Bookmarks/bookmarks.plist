@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>4</string>
+					<key>EndingLineNumber</key>
+					<string>9</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>5</string>
+					<key>Timestamp</key>
+					<string>720820311.250379</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Tools/HotKeyController.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>    private var _baseHotkey: String
+    private var _modificatorHotkey: [NSEvent.ModifierFlags]
+    //private var _setFunc: () -&gt; Void
+    
+    </string>
+				<key>leading</key>
+				<string>
+class HotKeyController: ObservableObject {
+</string>
+				<key>trailing</key>
+				<string>
+    init(baseHotkey: String, modificatorHotkey: [NSEvent.ModifierFlags]) {
+        self._baseHotkey = baseHotkey
+</string>
+			</dict>
+			<key>title</key>
+			<string>Variable</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Tools/HotKeyController.swift</string>
+					</dict>
+				</dict>
+				<key>type</key>
+				<string>DVTDocumentLocation</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>5</string>
+					<key>EndingLineNumber</key>
+					<string>14</string>
+					<key>StartingColumnNumber</key>
+					<string>5</string>
+					<key>StartingLineNumber</key>
+					<string>14</string>
+					<key>Timestamp</key>
+					<string>720820362.615864</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Tools/HotKeyController.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string></string>
+				<key>leading</key>
+				<string>        self._modificatorHotkey = modificatorHotkey
+        //self._setFunc = setFunc
+    }</string>
+				<key>trailing</key>
+				<string>
+    
+    // setter and getter for baseHotKey variable
+</string>
+			</dict>
+			<key>title</key>
+			<string>Init</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>4</string>
+					<key>EndingLineNumber</key>
+					<string>26</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>17</string>
+					<key>Timestamp</key>
+					<string>720820375.440536</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Tools/HotKeyController.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>    var baseHotkey: String {
+        get {
+            return self._baseHotkey
+        }
+        
+        set {
+            self._baseHotkey = newValue
+        }
+    }
+    </string>
+				<key>leading</key>
+				<string>    
+    // setter and getter for baseHotKey variable
+</string>
+				<key>trailing</key>
+				<string>
+    // setter and getter for modificatorHotkey variable
+    var modificator: [NSEvent.ModifierFlags] {
+</string>
+			</dict>
+			<key>title</key>
+			<string>getter/setter - baseHotKey</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>51</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>51</string>
+					<key>Timestamp</key>
+					<string>720820436.843967</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Tools/HotKeyController.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string></string>
+				<key>leading</key>
+				<string>
+    func setHotKey(action: @escaping () -&gt; Void) {
+</string>
+				<key>trailing</key>
+				<string>        var modifierFlags = NSEvent.ModifierFlags()
+        
+        if self._modificatorHotkey.contains(.capsLock) {
+</string>
+			</dict>
+			<key>title</key>
+			<string>func set hotkey on action</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>
