@@ -32,12 +32,15 @@ struct ContentView: View {
                     .onAppear {
                         // Hotkey
                     }
+                    .onHover { _ in
+                        // onHover action
+                    }
                     .frame(width: geometry.size.width, height: geometry.size.height / 10)
                     .offset(y: 50)
                     .background { GeometryReader { geometrySize in
                         Color.clear
                             .onAppear {
-                        
+                                
                             }
                     }
                     }
@@ -58,8 +61,25 @@ struct ContentView: View {
                             print("second")
                         }
                     }
+                    .onHover { _ in
+                        // onHover action
+                    }
                     .id("ReviewPage")
                     
+                    // Button to link on Settings view
+                    Button(action: {}){
+                        NavigationLink("Setting Page", destination: SettingsView())
+                            .background {
+                                Color.clear
+                            }
+                            .font(.custom("Monaco", size: 14))
+                            .fontDesign(.rounded)
+                    }
+                    .onAppear {
+                        // hotkey
+                    }
+                    .frame(width: geometry.size.width, height: geometry.size.height / 8)
+                    .offset(y: 90)
                 }
             } detail: {
                 GeometryReader { geometry in
@@ -94,7 +114,7 @@ struct ContentView: View {
                                     .id("ContainerLinks")
                                 Text("Links")
                                     .padding(.leading)
-                                    .font(.system(size: 14, weight: .medium, design: .rounded))
+                                    .font(.system(size: geometry.size.height < 600 ? 18 : 32, weight: .medium, design: .rounded))
                                     .offset(x: -5, y: 2)
                                     .id("ContainerLinksLabel")
                                 HStack {
@@ -102,7 +122,7 @@ struct ContentView: View {
                                     //  Link to GitHub
                                     Link(destination: URL(string: "https://github.com/ImGreatest/UtilitesKit")!, label: {
                                         Text("GitHub")
-                                            .font(.system(size: 14, weight: .medium, design: .rounded))
+                                            .font(.system(size: geometry.size.height < 600 ? 12 : 26, weight: .medium, design: .rounded))
                                             .foregroundStyle(Color(.white))
                                             .padding(.trailing)
                                             .id("ContainerLinksGitHub")
@@ -112,18 +132,18 @@ struct ContentView: View {
                                     // Link to documentation
                                     Link(destination: URL(string: "https://github.com")!, label: {
                                         Text("Documentation")
-                                            .font(.system(size: geometryContainer.size.height > 1000 ? 14 : 26, weight: .medium, design: .rounded))
+                                            .font(.system(size: geometry.size.height < 600 ? 12 : 26, weight: .medium, design: .rounded))
                                             .foregroundStyle(Color(.white))
                                             .padding(.trailing)
                                             .id("ContainerLinksDocumentation")
                                             .onAppear {
-                                                print(geometryContainer.size.height)
+                                                
                                             }
                                     })
-                                    .offset(x: 25)
+                                    .offset(x: geometry.size.height < 600 ? 25 : 75)
                                 }
                                 .padding(.top, -15)
-                                .offset(x: geometryContainer.size.width / 2.5, y: 30)
+                                .offset(x: geometryContainer.size.width / 2.5, y: geometry.size.height < 600 ? geometryContainer.size.height / 2 : geometryContainer.size.height / 2)
                             }
                         }
                         .frame(width: geometry.size.width - 75, height: geometry.size.height / 10, alignment: .top)
@@ -137,21 +157,29 @@ struct ContentView: View {
         }
         .toolbar {
             ToolbarItemGroup {
-                Button(action: {}) {
-                    NavigationLink(destination: SettingsView()) {
-                        Label("Settings", systemImage: "gear")
-                            .background(Color.clear)
+                    Button(action: {}) {
+                        NavigationLink( destination: SettingsView()) {
+                            Label("", systemImage: "gear.circle")
+                                .foregroundStyle(.gray)
+                        }
+                        .frame(width: 30, height: 30)
+                        .background(Color.clear)
                     }
-                    .frame(width: 30, height: 30)
-                    .background(Color.clear)
-                    .padding()
-                }
-                .help("Settings")
-                Button(action: {isDarkScheme.toggle()}) {
-                    Label("Change scheme", systemImage: isDarkScheme ? "sun.max" : "moon")
-                        .foregroundStyle(isDarkScheme ? .white : .black)
-                }
-                .help("Change scheme")
+                    .help("Settings")
+                    .id("SettingsButton")
+                    Button(action: {isDarkScheme.toggle()}) {
+                        Label("Change scheme", systemImage: isDarkScheme ? "sun.max" : "moon.circle")
+                            .foregroundStyle(isDarkScheme ? .white : .gray)
+                        
+                    }
+                    .help("Change scheme")
+                    .id("ChangeSchemeButton")
+            }
+        }
+        .toolbarColorScheme(isDarkScheme ? .dark : nil)
+        .background {
+            if !isDarkScheme {
+                Color.white
             }
         }
         .environment(\.colorScheme, isDarkScheme ? .dark : .light)
