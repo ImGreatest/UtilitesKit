@@ -10,6 +10,9 @@
 		A704C46C2AF07F79005F7F04 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704C46B2AF07F79005F7F04 /* SettingsView.swift */; };
 		A704C46D2AF07F79005F7F04 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704C46B2AF07F79005F7F04 /* SettingsView.swift */; };
 		A704C46E2AF07F79005F7F04 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704C46B2AF07F79005F7F04 /* SettingsView.swift */; };
+		A70E9E872AFD7564007C4717 /* TextStyleCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70E9E862AFD7564007C4717 /* TextStyleCleanerView.swift */; };
+		A70E9E882AFD7564007C4717 /* TextStyleCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70E9E862AFD7564007C4717 /* TextStyleCleanerView.swift */; };
+		A70E9E892AFD7564007C4717 /* TextStyleCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70E9E862AFD7564007C4717 /* TextStyleCleanerView.swift */; };
 		A730DE702AF02F4700FB2E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A730DE6F2AF02F4700FB2E33 /* ContentView.swift */; };
 		A730DE712AF02F4700FB2E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A730DE6F2AF02F4700FB2E33 /* ContentView.swift */; };
 		A730DE722AF02F4700FB2E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A730DE6F2AF02F4700FB2E33 /* ContentView.swift */; };
@@ -20,6 +23,12 @@
 		A7395B7C2AF678D800AC5DBC /* HotKeyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7395B7A2AF678D800AC5DBC /* HotKeyController.swift */; };
 		A7395B7D2AF678D800AC5DBC /* HotKeyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7395B7A2AF678D800AC5DBC /* HotKeyController.swift */; };
 		A7395B802AF6B3BF00AC5DBC /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = A7395B7F2AF6B3BF00AC5DBC /* HotKey */; };
+		A7395B822AF6DAEB00AC5DBC /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = A7395B812AF6DAEB00AC5DBC /* Documentation.docc */; };
+		A7395B832AF6DAEB00AC5DBC /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = A7395B812AF6DAEB00AC5DBC /* Documentation.docc */; };
+		A7395B842AF6DAEB00AC5DBC /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = A7395B812AF6DAEB00AC5DBC /* Documentation.docc */; };
+		A7395B862AF6DC1E00AC5DBC /* jsonUI.json in Resources */ = {isa = PBXBuildFile; fileRef = A7395B852AF6DC1E00AC5DBC /* jsonUI.json */; };
+		A7395B872AF6DC1E00AC5DBC /* jsonUI.json in Resources */ = {isa = PBXBuildFile; fileRef = A7395B852AF6DC1E00AC5DBC /* jsonUI.json */; };
+		A7395B882AF6DC1E00AC5DBC /* jsonUI.json in Resources */ = {isa = PBXBuildFile; fileRef = A7395B852AF6DC1E00AC5DBC /* jsonUI.json */; };
 		A77AE3852AF014B700F42C32 /* UtilitesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AE3842AF014B700F42C32 /* UtilitesApp.swift */; };
 		A77AE3892AF014B800F42C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77AE3882AF014B800F42C32 /* Assets.xcassets */; };
 		A77AE38C2AF014B800F42C32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77AE38B2AF014B800F42C32 /* Preview Assets.xcassets */; };
@@ -38,9 +47,6 @@
 		A7F25DE32AF073C300AC0EBF /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DE22AF073C300AC0EBF /* ReviewView.swift */; };
 		A7F25DE42AF073C300AC0EBF /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DE22AF073C300AC0EBF /* ReviewView.swift */; };
 		A7F25DE52AF073C300AC0EBF /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DE22AF073C300AC0EBF /* ReviewView.swift */; };
-		A7F25DE72AF0753C00AC0EBF /* TextFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DE62AF0753C00AC0EBF /* TextFinderView.swift */; };
-		A7F25DE82AF0753C00AC0EBF /* TextFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DE62AF0753C00AC0EBF /* TextFinderView.swift */; };
-		A7F25DE92AF0753C00AC0EBF /* TextFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DE62AF0753C00AC0EBF /* TextFinderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +68,12 @@
 
 /* Begin PBXFileReference section */
 		A704C46B2AF07F79005F7F04 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A70E9E862AFD7564007C4717 /* TextStyleCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleCleanerView.swift; sourceTree = "<group>"; };
 		A730DE6F2AF02F4700FB2E33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7395B762AF66D2200AC5DBC /* TextStyleCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleCleaner.swift; sourceTree = "<group>"; };
 		A7395B7A2AF678D800AC5DBC /* HotKeyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeyController.swift; sourceTree = "<group>"; };
+		A7395B812AF6DAEB00AC5DBC /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
+		A7395B852AF6DC1E00AC5DBC /* jsonUI.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = jsonUI.json; sourceTree = "<group>"; };
 		A77AE3812AF014B700F42C32 /* Utilites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utilites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77AE3842AF014B700F42C32 /* UtilitesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitesApp.swift; sourceTree = "<group>"; };
 		A77AE3882AF014B800F42C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,7 +88,6 @@
 		A7F25D682AF0353500AC0EBF /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		A7F25DDE2AF044E400AC0EBF /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		A7F25DE22AF073C300AC0EBF /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
-		A7F25DE62AF0753C00AC0EBF /* TextFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFinderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +122,9 @@
 				A730DE6F2AF02F4700FB2E33 /* ContentView.swift */,
 				A7F25D682AF0353500AC0EBF /* ColorPickerView.swift */,
 				A7F25DE22AF073C300AC0EBF /* ReviewView.swift */,
-				A7F25DE62AF0753C00AC0EBF /* TextFinderView.swift */,
 				A704C46B2AF07F79005F7F04 /* SettingsView.swift */,
+				A7395B852AF6DC1E00AC5DBC /* jsonUI.json */,
+				A70E9E862AFD7564007C4717 /* TextStyleCleanerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,8 +132,8 @@
 		A77AE3782AF014B700F42C32 = {
 			isa = PBXGroup;
 			children = (
+				A7395B812AF6DAEB00AC5DBC /* Documentation.docc */,
 				A77AE3B82AF019B100F42C32 /* Tools */,
-				A77AE3B72AF019A400F42C32 /* Documentation */,
 				A77AE3832AF014B700F42C32 /* Utilites */,
 				A77AE3952AF014B800F42C32 /* UtilitesTests */,
 				A77AE39F2AF014B800F42C32 /* UtilitesUITests */,
@@ -177,13 +186,6 @@
 				A77AE3A22AF014B800F42C32 /* UtilitesUITestsLaunchTests.swift */,
 			);
 			path = UtilitesUITests;
-			sourceTree = "<group>";
-		};
-		A77AE3B72AF019A400F42C32 /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Documentation;
 			sourceTree = "<group>";
 		};
 		A77AE3B82AF019B100F42C32 /* Tools */ = {
@@ -308,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A77AE38C2AF014B800F42C32 /* Preview Assets.xcassets in Resources */,
+				A7395B862AF6DC1E00AC5DBC /* jsonUI.json in Resources */,
 				A77AE3892AF014B800F42C32 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7395B872AF6DC1E00AC5DBC /* jsonUI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7395B882AF6DC1E00AC5DBC /* jsonUI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,11 +340,12 @@
 			files = (
 				A7F25D692AF0353500AC0EBF /* ColorPickerView.swift in Sources */,
 				A704C46C2AF07F79005F7F04 /* SettingsView.swift in Sources */,
+				A7395B822AF6DAEB00AC5DBC /* Documentation.docc in Sources */,
 				A77AE3852AF014B700F42C32 /* UtilitesApp.swift in Sources */,
 				A730DE702AF02F4700FB2E33 /* ContentView.swift in Sources */,
 				A7F25DDF2AF044E400AC0EBF /* Tools.swift in Sources */,
 				A7F25DE32AF073C300AC0EBF /* ReviewView.swift in Sources */,
-				A7F25DE72AF0753C00AC0EBF /* TextFinderView.swift in Sources */,
+				A70E9E872AFD7564007C4717 /* TextStyleCleanerView.swift in Sources */,
 				A77AE3BA2AF01A2F00F42C32 /* ColorPicker.swift in Sources */,
 				A7395B772AF66D2200AC5DBC /* TextStyleCleaner.swift in Sources */,
 				A7395B7B2AF678D800AC5DBC /* HotKeyController.swift in Sources */,
@@ -352,11 +358,12 @@
 			files = (
 				A7F25D6A2AF0353500AC0EBF /* ColorPickerView.swift in Sources */,
 				A704C46D2AF07F79005F7F04 /* SettingsView.swift in Sources */,
+				A7395B832AF6DAEB00AC5DBC /* Documentation.docc in Sources */,
 				A77AE3972AF014B800F42C32 /* UtilitesTests.swift in Sources */,
 				A77AE3BB2AF01A2F00F42C32 /* ColorPicker.swift in Sources */,
 				A7F25DE02AF044E400AC0EBF /* Tools.swift in Sources */,
 				A7F25DE42AF073C300AC0EBF /* ReviewView.swift in Sources */,
-				A7F25DE82AF0753C00AC0EBF /* TextFinderView.swift in Sources */,
+				A70E9E882AFD7564007C4717 /* TextStyleCleanerView.swift in Sources */,
 				A730DE712AF02F4700FB2E33 /* ContentView.swift in Sources */,
 				A7395B782AF66D2200AC5DBC /* TextStyleCleaner.swift in Sources */,
 				A7395B7C2AF678D800AC5DBC /* HotKeyController.swift in Sources */,
@@ -371,13 +378,14 @@
 				A7395B7D2AF678D800AC5DBC /* HotKeyController.swift in Sources */,
 				A77AE3A32AF014B800F42C32 /* UtilitesUITestsLaunchTests.swift in Sources */,
 				A77AE3A12AF014B800F42C32 /* UtilitesUITests.swift in Sources */,
+				A70E9E892AFD7564007C4717 /* TextStyleCleanerView.swift in Sources */,
 				A704C46E2AF07F79005F7F04 /* SettingsView.swift in Sources */,
 				A77AE3BC2AF01A2F00F42C32 /* ColorPicker.swift in Sources */,
 				A7395B792AF66D2200AC5DBC /* TextStyleCleaner.swift in Sources */,
+				A7395B842AF6DAEB00AC5DBC /* Documentation.docc in Sources */,
 				A7F25D6B2AF0353500AC0EBF /* ColorPickerView.swift in Sources */,
 				A7F25DE12AF044E400AC0EBF /* Tools.swift in Sources */,
 				A7F25DE52AF073C300AC0EBF /* ReviewView.swift in Sources */,
-				A7F25DE92AF0753C00AC0EBF /* TextFinderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,12 +529,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Utilites/Utilites.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Utilites/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,12 +558,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Utilites/Utilites.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Utilites/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

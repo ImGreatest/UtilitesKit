@@ -35,18 +35,6 @@ class HotKeyController: ObservableObject {
             self._modificatorHotkey = newValue
         }
     }
-    
-    // setter and getter for setFunc variable
-    
-    //var setFunc: () -> Void {
-    //    get {
-    //        return self._setFunc
-    //    }
-    //
-    //    set {
-    //        self._setFunc = newValue
-    //    }
-    //}
 
     func setHotKey(action: @escaping () -> Void) {
         var modifierFlags = NSEvent.ModifierFlags()

@@ -1,0 +1,25 @@
+{
+    "caption": "Utilites Kit",
+    "contentSizeWidth": 800,
+    "contentSizeHeight": 600,
+    "colorScheme": "dark",
+    "ContentView": {
+        "Font": {
+            "Block": {
+                "Caption": {
+                    "Name": "Monaco",
+                    "Size": 14,
+                    "Weight": "medium",
+                    "Design": "rounded"
+                },
+                "Text": {
+                    "Name": "",
+                    "Size": 1,
+                    "Weight": "medium",
+                    "Design": "rounded"
+                }
+            }
+        }
+    },
+    "GitHubLink": "https://github.com/ImGreatest"
+}

@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import AppKit
+import ApplicationServices
 @testable import Utilites
 
 final class UtilitesTests: XCTestCase {
@@ -32,5 +34,27 @@ final class UtilitesTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+}
 
+class JsonReaderTests: XCTestCase {
+    func testReadJsonData() {
+        let jsonReader = JsonReader()
+        let result = jsonReader.getCaption()
+        
+    }
+    
+    // func should return caption app
+    func testGetCaption() {
+        let jsonReader = JsonReader()
+        let result = jsonReader.getCaption()
+        let caption = "Utilites Kit"
+        
+        print(result)
+        
+        if let captionValue = result["caption"] as? String {
+            XCTAssertEqual(captionValue, caption)
+        } else {
+            XCTFail("Caption not found in Json")
+        }
+    }
 }

@@ -182,13 +182,13 @@ class HotKeyController: ObservableObject {
 					<key>EndingColumnNumber</key>
 					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>51</string>
+					<string>40</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>51</string>
+					<string>39</string>
 					<key>Timestamp</key>
-					<string>720820436.843967</string>
+					<string>721253563.5678149</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -204,15 +204,16 @@ class HotKeyController: ObservableObject {
 			<key>text-context</key>
 			<dict>
 				<key>focused</key>
-				<string></string>
+				<string>        var modifierFlags = NSEvent.ModifierFlags()
+</string>
 				<key>leading</key>
 				<string>
     func setHotKey(action: @escaping () -&gt; Void) {
 </string>
 				<key>trailing</key>
-				<string>        var modifierFlags = NSEvent.ModifierFlags()
-        
+				<string>        
         if self._modificatorHotkey.contains(.capsLock) {
+            modifierFlags.insert(.capsLock)
 </string>
 			</dict>
 			<key>title</key>
