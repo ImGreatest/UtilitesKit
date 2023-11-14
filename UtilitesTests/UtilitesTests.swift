@@ -1,9 +1,4 @@
-//
-//  UtilitesTests.swift
-//  UtilitesTests
-//
-//  Created by Rayn Sosling on 30.10.2023.
-//
+
 
 import XCTest
 import AppKit
@@ -37,11 +32,6 @@ final class UtilitesTests: XCTestCase {
 }
 
 class JsonReaderTests: XCTestCase {
-    func testReadJsonData() {
-        let jsonReader = JsonReader()
-        let result = jsonReader.getCaption()
-        
-    }
     
     // func should return caption app
     func testGetCaption() {
@@ -51,7 +41,7 @@ class JsonReaderTests: XCTestCase {
         
         print(result)
         
-        if let captionValue = result["caption"] as? String {
+        if let captionValue = result as? String {
             XCTAssertEqual(captionValue, caption)
         } else {
             XCTFail("Caption not found in Json")

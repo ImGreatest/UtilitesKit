@@ -13,7 +13,15 @@ struct ContentView: View {
     
     
     @Environment(\.colorScheme) var colorScheme
+    @State private var tag: Int8? = 1
+    
     @State private var isHovering: Bool = false
+    @State private var isHoveringMenu: Bool = false
+    @State private var isHoveringSecondMenu: Bool = false
+    @State private var isHoveringThirdMenu: Bool = false
+    @State private var isHoveringFourMenu: Bool = false
+    @State private var isHoveringFiveMenu: Bool = false
+    
     @State private var isDarkScheme: Bool = UITools().changeShameImage(nameScheme: JsonReader().getColorScheme())
     
     var body: some View {
@@ -24,10 +32,16 @@ struct ContentView: View {
                 GeometryReader { geometry in
                     
                     // Button to link on Color Picker page
-                    Button(action: {}) {
-                        NavigationLink("Color Picker", destination: ColorPickerView())
-                            .font(.custom("Monaco", size: 14))
-                            .fontDesign(.rounded)
+                    Button {
+                        tag = 2
+                    } label: {
+                        NavigationLink(destination: ColorPickerView(), tag: 2, selection: $tag) {
+                            HStack {
+                                Text("Color Picker")
+                                    .font(.custom("Monaco", size: 14))
+                                    .fontDesign(.rounded)
+                            }
+                        }
                     }
                     .onAppear {
                         // Hotkey
@@ -47,13 +61,16 @@ struct ContentView: View {
                     .id("ColorPickerLink")
                     
                     // Button to link on Review page
-                    Button(action: {print("pressed")}) {
-                        NavigationLink( "Review Page", destination: ReviewView())
-                            .background {
-                                Color.clear
+                    Button {
+                        tag = 1
+                    } label: {
+                        NavigationLink(destination: ReviewView(), tag: 1, selection: $tag) {
+                            HStack {
+                                Text("Review Page")
+                                    .font(.custom("Monaco", size: 14))
+                                    .fontDesign(.rounded)
                             }
-                            .font(.custom("Monaco", size: 14))
-                            .fontDesign(.rounded)
+                        }
                     }
                     .frame(width: geometry.size.width, height: geometry.size.height / 8)
                     .onAppear {
@@ -62,24 +79,111 @@ struct ContentView: View {
                         }
                     }
                     .onHover { _ in
-                        // onHover action
+                        isHovering.toggle()
                     }
                     .id("ReviewPage")
                     
                     // Button to link on Settings view
-                    Button(action: {}){
-                        NavigationLink("Setting Page", destination: SettingsView())
-                            .background {
-                                Color.clear
+                    Button {
+                        tag = 3
+                    } label: {
+                        NavigationLink(destination: SettingsView(), tag: 3, selection: $tag) {
+                            HStack {
+                                Text("Setting Page")
+                                    .font(.custom("Monaco", size: 14))
+                                    .fontDesign(.rounded)
                             }
-                            .font(.custom("Monaco", size: 14))
-                            .fontDesign(.rounded)
+                        }
                     }
                     .onAppear {
                         // hotkey
                     }
                     .frame(width: geometry.size.width, height: geometry.size.height / 8)
                     .offset(y: 90)
+                    
+                    // Button to link on Color Picker view
+                    Button {
+                        tag = 4
+                    } label: {
+                        NavigationLink(destination: ColorPickerView(), tag: 4, selection: $tag) {
+                            HStack {
+                                Text("View Layout")
+                                    .font(.custom("Monaco", size: 14))
+                                    .fontDesign(.rounded)
+                            }
+                        }
+                    }
+                    .onAppear {
+                        // hotkey
+                    }
+                    .onHover {_ in
+                        //
+                    }
+                    .frame(width: geometry.size.width)
+                    .offset(y: 150)
+                    
+                    // Button to link on Text Cleaner Style view
+                    Button {
+                        tag = 5
+                    } label: {
+                        NavigationLink(destination: TextStyleCleanerView(), tag: 5, selection: $tag) {
+                            HStack {
+                                Text("Text Cleaner")
+                                    .font(.custom("Monaco", size: 14))
+                                    .fontDesign(.rounded)
+                            }
+                        }
+                    }
+                    .onAppear {
+                        
+                    }
+                    .frame(width: geometry.size.width)
+                    .offset(y: 195)
+                    .onHover { _ in
+                        
+                    }
+                    
+                    // Button to link on Image Size Change view
+                    Button {
+                        tag = 6
+                    } label: {
+                        NavigationLink(destination: ImageSizeChangerView(), tag: 6, selection: $tag) {
+                            HStack {
+                                Text("Image Change")
+                                    .font(.custom("Monaco", size: 14))
+                                    .fontDesign(.rounded)
+                            }
+                        }
+                    }
+                    .onAppear {
+                        
+                    }
+                    .frame(width: geometry.size.width)
+                    .offset(y: 240)
+                    .onHover { _ in
+                        
+                    }
+                    
+                    // Button to link on Text Cleaner Style view
+                    Button {
+                        tag = 7
+                    } label: {
+                        NavigationLink(destination: ViewLayoutView(), tag: 7, selection: $tag) {
+                            HStack {
+                                Text("View Scheme")
+                                    .font(.custom("Monaco", size: 14))
+                                    .fontDesign(.rounded)
+                            }
+                        }
+                    }
+                    .onAppear {
+                        
+                    }
+                    .frame(width: geometry.size.width)
+                    .offset(y: 285)
+                    .onHover { _ in
+                        
+                    }
                 }
             } detail: {
                 GeometryReader { geometry in
@@ -89,17 +193,16 @@ struct ContentView: View {
                                 ContainerRelativeShape()
                                     .fill(Color.gray)
                                     .cornerRadius(10.0)
-                                    .id("ContainerIntroduce")
-                                Text("Introduce")
+                                Text("Entry")
                                     .padding(.leading)
                                     .font(.custom("Monaco", size: 14))
                                     .fontDesign(.rounded)
                                     .offset(x: -5, y: 2)
-                                    .id("ContainerIntroduceLabel")
-                                Text("Text")
-                                    .font(.subheadline)
+                                    .padding(.horizontal, 5)
+                                Text("Utilites Kit is a set of small programs that can speed up work on macOS.")
+                                    .padding(.horizontal, 5)
+                                    .font(.system(size: 14, weight: .light, design: .rounded))
                                     .offset(x: 5, y: 30)
-                                    .id("ContainerIntroduceDescription")
                             }
                         }
                         .frame(width: geometry.size.width - 75, height: geometry.size.height / 5, alignment: .top)

@@ -1,8 +1,13 @@
-//
-//  ViewLayouter.swift
-//  Utilites
-//
-//  Created by Rayn Sosling on 10.11.2023.
-//
 
+
+import CoreGraphics
 import Foundation
+import Cocoa
+import AppKit
+
+
+func getOpenWindows() -> [NSWindow] {
+    return NSApplication.shared.windows
+}
+
+
