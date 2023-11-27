@@ -47,8 +47,9 @@ struct TextStyleCleanerView: View {
                 ZStack {
                     GeometryReader { geometryContainer in
                         ContainerRelativeShape()
-                            .fill(Color.gray)
-                            .cornerRadius(10.0)
+                            .hidden()
+                            //.fill(Color.gray)
+                            //.cornerRadius(10.0)
                         HStack(spacing: 35) {
                             HStack {
                                 Image(systemName: "note.text")
@@ -67,6 +68,7 @@ struct TextStyleCleanerView: View {
                             })
                             .padding(.horizontal, -25)
                         }
+                        .hidden()
                         .padding(.top, -15)
                         .offset(x: geometryContainer.size.width / 2.5, y: geometry.size.height < 600 ? geometryContainer.size.height / 2 : geometryContainer.size.height / 2)
                     }

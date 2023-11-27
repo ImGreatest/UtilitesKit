@@ -47,9 +47,6 @@
 		A7F25DDF2AF044E400AC0EBF /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DDE2AF044E400AC0EBF /* Tools.swift */; };
 		A7F25DE02AF044E400AC0EBF /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DDE2AF044E400AC0EBF /* Tools.swift */; };
 		A7F25DE12AF044E400AC0EBF /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DDE2AF044E400AC0EBF /* Tools.swift */; };
-		A7F25DE32AF073C300AC0EBF /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DE22AF073C300AC0EBF /* ReviewView.swift */; };
-		A7F25DE42AF073C300AC0EBF /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DE22AF073C300AC0EBF /* ReviewView.swift */; };
-		A7F25DE52AF073C300AC0EBF /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F25DE22AF073C300AC0EBF /* ReviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +90,6 @@
 		A7CEED612B013F1700A886FF /* ImageSizeChangerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSizeChangerView.swift; sourceTree = "<group>"; };
 		A7F25D682AF0353500AC0EBF /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		A7F25DDE2AF044E400AC0EBF /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
-		A7F25DE22AF073C300AC0EBF /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +123,6 @@
 			children = (
 				A730DE6F2AF02F4700FB2E33 /* ContentView.swift */,
 				A7F25D682AF0353500AC0EBF /* ColorPickerView.swift */,
-				A7F25DE22AF073C300AC0EBF /* ReviewView.swift */,
 				A704C46B2AF07F79005F7F04 /* SettingsView.swift */,
 				A7395B852AF6DC1E00AC5DBC /* jsonUI.json */,
 				A70E9E862AFD7564007C4717 /* TextStyleCleanerView.swift */,
@@ -355,7 +350,6 @@
 				A730DE702AF02F4700FB2E33 /* ContentView.swift in Sources */,
 				A7AAD3A42AFE96D000EBAFD4 /* ViewLayoutView.swift in Sources */,
 				A7F25DDF2AF044E400AC0EBF /* Tools.swift in Sources */,
-				A7F25DE32AF073C300AC0EBF /* ReviewView.swift in Sources */,
 				A70E9E872AFD7564007C4717 /* TextStyleCleanerView.swift in Sources */,
 				A77AE3BA2AF01A2F00F42C32 /* ColorPicker.swift in Sources */,
 				A7395B772AF66D2200AC5DBC /* TextStyleCleaner.swift in Sources */,
@@ -374,7 +368,6 @@
 				A77AE3972AF014B800F42C32 /* UtilitesTests.swift in Sources */,
 				A77AE3BB2AF01A2F00F42C32 /* ColorPicker.swift in Sources */,
 				A7F25DE02AF044E400AC0EBF /* Tools.swift in Sources */,
-				A7F25DE42AF073C300AC0EBF /* ReviewView.swift in Sources */,
 				A70E9E882AFD7564007C4717 /* TextStyleCleanerView.swift in Sources */,
 				A730DE712AF02F4700FB2E33 /* ContentView.swift in Sources */,
 				A7395B782AF66D2200AC5DBC /* TextStyleCleaner.swift in Sources */,
@@ -397,7 +390,6 @@
 				A7395B842AF6DAEB00AC5DBC /* Documentation.docc in Sources */,
 				A7F25D6B2AF0353500AC0EBF /* ColorPickerView.swift in Sources */,
 				A7F25DE12AF044E400AC0EBF /* Tools.swift in Sources */,
-				A7F25DE52AF073C300AC0EBF /* ReviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
